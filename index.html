@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Delvin Lee Vending Co.</title>
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       .section-title {
         color: #286CAD;
         font-weight: bold;
@@ -31,6 +34,14 @@
         color: #fff;
         background-color: #286CAD;
       }
+      h1::before { 
+        display: block; 
+        content: " "; 
+        margin-top: -100px; 
+        height: 100px; 
+        visibility: hidden; 
+        pointer-events: none;
+      }
       @media only screen and (max-width: 900px) {
         /* For mobile phones: */
         .jumbotron-logo {
@@ -52,17 +63,17 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Team</a>
+            <a class="nav-link" href="#team-section">Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Donations</a>
+            <a class="nav-link" href="#donations-section">Donations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact-section">Contact</a>
           </li>
         </ul>
       </div>
@@ -77,11 +88,11 @@
           at an affordable price with the intention of giving back to our community.
         </b>
       </p>
-      <a class="btn btn-color" href="#" role="button">Learn More</a>
+      <a class="btn btn-color" href="#what-we-offer-section" role="button">Learn More</a>
     </section>
 
     <section class="container section-gutter">
-      <h1 class="text-center section-title">What We Offer</h1>
+      <h1 class="text-center section-title" id="what-we-offer-section">What We Offer</h1>
       <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Single Head Vending</a>
@@ -118,7 +129,7 @@
               <ul class="list-group list-padding">
                 <li class="list-group-item">Small, Compact and Sturdy (Height: 42" with machine & stand, 15" wide base)</li>
                 <li class="list-group-item">Makes a great addition to any lobby and waiting area </li>
-                <li class="list-group-item">Choice of One Type of Candy - Gumballs, Skittles, Peanut M&M’s, Mike and Ike</li>
+                <li class="list-group-item">Choice of Three Types of Candy - Gumballs, Skittles, Peanut M&M’s, Mike and Ike</li>
                 <li class="list-group-item">Special Accommodations can be made upon request</li>
               </ul>
             </div>
@@ -143,7 +154,7 @@
     </section>
           
     <section class="container section-gutter">
-      <h1 class="text-center section-title">Meet the Team</h1>
+      <h1 class="text-center section-title" id="team-section">Meet the Team</h1>
       <p class="text-center mx-auto" style="max-width: 90%">
         <b>
           Here at Delvin Lee Vending Co. we offer a unique experience for all established businesses, 
@@ -222,7 +233,7 @@
     </section>
 
     <section class="container section-gutter">
-      <h1 class="text-center section-title">Donations</h1>
+      <h1 class="text-center section-title" id="donations-section">Donations</h1>
       <p class="text-center mx-auto">
         <b>
           Pay It Forward's mission is to fight against food insecurity issues for college students at UCSD 
@@ -240,7 +251,7 @@
     </section>
 
     <section class="container section-gutter">
-      <h1 class="text-center section-title">Contact</h1>
+      <h1 class="text-center section-title" id="contact-section">Contact</h1>
       <p class="text-center mx-auto">
           <b>Email:</b> delvinleevending@gmail.com <br>
           <b>Phone Number:</b> 909-539-5766          
