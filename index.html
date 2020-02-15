@@ -22,6 +22,10 @@
         background-color: #286CAD;
         color: white;
       }
+      .btn:hover {
+        color: white;
+        text-decoration: none;
+      }
       .carousel .carousel-item img {
         max-height: 500px;
         max-width: 300px;
@@ -44,6 +48,7 @@
       }
       .section-title {
         color: #286CAD;
+        margin-bottom: 20px;
         font-weight: bold;
       }
       .section-gutter {
@@ -69,11 +74,9 @@
       <a class="navbar-brand" href="#">
         <img src="images/logo.png" width="90" height="40">
       </a>
-
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -84,6 +87,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#donations-section">Donations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#merchandise-section">Merchandise</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact-section">Contact</a>
@@ -104,7 +110,7 @@
           at an affordable price with the intention of giving back to our community.
         </b>
       </p>
-      <a class="btn btn-color" href="#what-we-offer-section" role="button">Learn More</a>
+      <a class="btn btn-lg btn-color" href="#what-we-offer-section" role="button">Learn More</a>
     </section>
 
     <section class="container section-gutter">
@@ -251,11 +257,11 @@
     <section class="container section-gutter">
       <div class="row">
         <div class="col-lg-6 col-sm-12">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="background-color: black;">
+          <div id="carouselIndicators" class="carousel slide" data-ride="carousel" style="background-color: black;">
             <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -268,11 +274,11 @@
                 <img class="d-block w-100 img-slide" src="images/pay-it-forward-delvin-2.png" alt="Third slide">
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
@@ -294,12 +300,104 @@
             <a href="https://www.instagram.com/ucsdfoodcoop/" target="_blank">Instagram</a>, and  
             <a href="https://www.facebook.com/ucsdfoodcoop" target="_blank">Facebook</a>.
           </p> 
-          <h1 class="text-center section-title" id="contact-section">Contact</h1>
-          <p class="text-center mx-auto">
-              <b>Email:</b> delvinleevending@gmail.com <br>
-              <b>Phone Number:</b> 909-539-5766 <br>
-          </p>
+          
+          <div class="text-center" style="margin-top: 5%;">
+            <button type="button" class="btn btn-lg btn-color" data-toggle="modal" data-target="#donationModal">
+              Click Here to Donate!
+            </button>
+          </div>
+
+          <div class="modal fade" id="donationModal" tabindex="-1" role="dialog" aria-labelledby="donationModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content text-center">
+                <div class="modal-header">
+                  <h5 class="modal-title mx-auto" id="donationModalLabel">Donate to Pay It Forward!</h5>
+                </div>
+                <div class="modal-body">
+                  <p><b>Venmo Username:</b> @Pay-It-Forward</p>
+                  <img src="images/venmo-qr-code.png"/>
+                </div>
+                <div class="modal-footer text-center">
+                  <button type="button" class="btn btn-lg btn-color mx-auto" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="container section-gutter">
+      <h1 class="text-center section-title" id="merchandise-section">Merchandise</h1>
+      <div class="row">
+        <div class="col-lg-3 col-sm-12">
+          <div class="card mb-3">
+            <img src="images/merchandise-men-t-shirt.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">
+                Men's T-Shirt
+                <br>
+                <small>$10.00</small>
+              </h5>
+              <a href="https://www.etsy.com/listing/761384420/mens-short-sleeve-tee?ref=shop_home_active_2" target="_blank" class="btn btn-color" role="button">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+          <div class="card mb-3">
+            <img src="images/merchandise-women-tshirt.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">
+                Women's T-Shirt
+                <br>
+                <small>$10.00</small>
+              </h5>
+              <a href="https://www.etsy.com/listing/775256569/womens-short-sleeve-tee?ref=shop_home_active_4" target="_blank" class="btn btn-color" role="button">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+          <div class="card mb-3">
+            <img src="images/merchandise-mug.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">
+                White Mug 
+                <br> 
+                <small>$12.00</small>
+              </h5>
+              <a href="https://www.etsy.com/listing/761397692/white-ceramic-mug?ref=shop_home_active_3" target="_blank" class="btn btn-color" role="button">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+          <div class="card mb-3">
+            <img src="images/merchandise-stickers.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">
+                Square Stickers
+                <br> 
+                <small>$2.50</small>
+              </h5>
+              <a href="https://www.etsy.com/listing/777083913/square-stickers?ref=shop_home_active_1" target="_blank" class="btn btn-color" role="button">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-gutter">
+      <h1 class="text-center section-title" id="contact-section">Contact</h1>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12"></div>
+        <div class="col-lg-4 col-sm-12">
+          <ul class="list-group">
+            <li class="list-group-item"><b>Email:</b> delvinleevending@gmail.com</li>
+            <li class="list-group-item"><b>Phone:</b> 909-539-5766</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-12"></div>
       </div>
     </section>
 
